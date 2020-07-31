@@ -6,6 +6,9 @@ export default {
     alignItems: "center",
     justifyContent: "flex-start",
     height: "6vh",
+    [sizes.down("sm")]: {
+      margin: "10px 0",
+    },
   },
   logo: {
     marginRight: "15px",

@@ -97,7 +97,6 @@ class ColorPickerForm extends Component {
             className={classes.addColor}
             style={{
               backgroundColor: paletteIsFull ? "grey" : currentColor,
-              fontSize: "1rem",
             }}
           >
             {paletteIsFull ? "Palette Full" : "Add Color"}

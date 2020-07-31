@@ -26,7 +26,7 @@ const styles = (theme) => ({
   },
   content: {
     flexGrow: 1,
-    height: "calc(100vh - 64px)",
+    height: "calc(95vh - 64px)",
     padding: 0,
     transition: theme.transitions.create("margin", {
       easing: theme.transitions.easing.sharp,

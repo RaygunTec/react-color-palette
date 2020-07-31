@@ -28,7 +28,7 @@ export default [
   {
     paletteName: "Flat UI Colors v1",
     id: "flat-ui-colors-v1",
-    emoji: "🤙",
+    emoji: "✨",
     colors: [
       { name: "Turquoise", color: "#1abc9c" },
       { name: "Emerald", color: "#2ecc71" },
@@ -74,7 +74,7 @@ export default [
       { name: "HollyHock", color: "#833471" },
       { name: "RedPigment", color: "#EA2027" },
       { name: "TurkishAqua", color: "#006266" },
-      { name: "20000LeaguesUnderTheSea", color: "#1B1464" },
+      { name: "UnderTheSea", color: "#1B1464" },
       { name: "CircumorbitalRing", color: "#5758BB" },
       { name: "MagentaPurple", color: "#6F1E51" },
     ],

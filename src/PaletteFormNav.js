@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { withStyles } from '@material-ui/core/styles';
+import { withStyles } from "@material-ui/core/styles";
 import PaletteMetaForm from "./PaletteMetaForm";
 import { Link } from "react-router-dom";
 import classNames from "classnames";
@@ -36,6 +36,7 @@ class PaletteFormNav extends Component {
       palettes,
       handleSubmit,
       handleDrawerOpen,
+      drawerOpen,
     } = this.props;
     const { formShowing } = this.state;
 
@@ -60,12 +61,17 @@ class PaletteFormNav extends Component {
             >
               <AddToPhotosIcon />
             </IconButton>
-            <Typography className={classes.navTitleCreate} variant="h6" color="inherit" noWrap>
+            <Typography
+              className={classes.navTitleCreate}
+              variant="h6"
+              color="inherit"
+              noWrap
+            >
               Create A Palette
             </Typography>
           </Toolbar>
           <div className={classes.navBtns}>
-            <Link to="/">
+            <Link to="/" style={{ display: drawerOpen ? "none" : "initial" }}>
               <Button
                 variant="contained"
                 color="secondary"
@@ -79,6 +85,7 @@ class PaletteFormNav extends Component {
               color="primary"
               onClick={this.showForm}
               className={classes.button}
+              style={{ display: drawerOpen ? "none" : "initial" }}
             >
               Save
             </Button>

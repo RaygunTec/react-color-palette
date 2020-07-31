@@ -7,7 +7,7 @@ const styles = {
     width: "100%",
     padding: "1rem",
     marginTop: "0.2rem",
-    fontSize: "1rem",
+    fontSize: "14px",
   },
   colorNameInput: {
     width: "100%",
@@ -25,10 +25,11 @@ const styles = {
     width: "100%",
     display: "flex",
     justifyContent: "space-between",
-    padding: "0.2rem 0"
+    padding: "0.2rem 0",
   },
   button: {
-    width: "46%",
+    width: "48%",
+    fontSize: "12px"
   },
 };
 

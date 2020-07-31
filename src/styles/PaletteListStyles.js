@@ -11,7 +11,7 @@ export default {
     },
   },
   root: {
-    height: "100vh",
+    height: "100%",
     display: "flex",
     alignItems: "flex-start",
     justifyContent: "center",
@@ -26,6 +26,7 @@ export default {
   },
   heading: {
     fontSize: "1.5rem",
+    margin: "0",
     [sizes.down("sm")]: {
       margin: "1rem",
     },
@@ -48,6 +49,7 @@ export default {
   nav: {
     display: "flex",
     width: "100%",
+    margin: "2rem 0",
     justifyContent: "space-between",
     alignItems: "center",
     color: "white",
@@ -56,11 +58,6 @@ export default {
     },
     [sizes.down("sm")]: {
       flexDirection: "column",
-    },
-  },
-  button: {
-    [sizes.down("sm")]: {
-      marginBottom: "1rem",
     },
   },
   palettes: {

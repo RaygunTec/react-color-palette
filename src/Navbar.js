@@ -24,13 +24,19 @@ class Navbar extends Component {
   };
 
   render() {
-    const { level, changeLevel, showingAllColors, classes } = this.props;
+    const {
+      level,
+      changeLevel,
+      showingAllColors,
+      classes,
+      paletteId,
+      toPalette,
+    } = this.props;
     const { format } = this.state;
-
     return (
       <header className={classes.Navbar}>
         <div className={classes.logo}>
-          <Link to="/">reactcolorpicker</Link>
+          <Link to="/">React Color Palette</Link>
         </div>
         {showingAllColors && (
           <div className={classes.sliderContainer}>
@@ -41,7 +47,7 @@ class Navbar extends Component {
                 min={100}
                 max={900}
                 step={100}
-                onAfterChange={changeLevel}
+                onChange={changeLevel}
               />
             </div>
           </div>
@@ -58,7 +64,10 @@ class Navbar extends Component {
           <MenuItem value="rgba">RGBA - rgba(255,255,255, 1.0)</MenuItem>
         </Select>
         <div className={classes.selectContainer}>
-          <Link to="/" style={{ textDecoration: "none" }}>
+          <Link
+            to={toPalette ? `/palette/${paletteId}` : "/"}
+            style={{ textDecoration: "none" }}
+          >
             <Button
               variant="contained"
               color="secondary"
