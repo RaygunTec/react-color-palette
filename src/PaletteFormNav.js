@@ -71,7 +71,13 @@ class PaletteFormNav extends Component {
             </Typography>
           </Toolbar>
           <div className={classes.navBtns}>
-            <Link to="/" style={{ display: drawerOpen ? "none" : "initial" }}>
+            <Link
+              to="/"
+              style={{
+                display:
+                  drawerOpen && window.innerWidth < 700 ? "none" : "initial",
+              }}
+            >
               <Button
                 variant="contained"
                 color="secondary"
@@ -85,7 +91,10 @@ class PaletteFormNav extends Component {
               color="primary"
               onClick={this.showForm}
               className={classes.button}
-              style={{ display: drawerOpen ? "none" : "initial" }}
+              style={{
+                display:
+                  drawerOpen && window.innerWidth < 700 ? "none" : "initial",
+              }}
             >
               Save
             </Button>

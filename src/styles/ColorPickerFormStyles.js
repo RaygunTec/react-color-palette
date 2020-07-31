@@ -29,7 +29,7 @@ const styles = {
   },
   button: {
     width: "48%",
-    fontSize: "12px"
+    fontSize: "12px",
   },
 };
 

@@ -1,5 +1,6 @@
 import chroma from "chroma-js";
 import sizes from "./sizes";
+
 export default {
   ColorBox: {
     width: "20%",
